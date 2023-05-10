@@ -1,0 +1,25 @@
+<template>
+    <div class="">
+        <ul class="flex justify-center">
+            <li>
+                <RouterLink to="/"
+                    class="text-lg font-medium m-1 px-2 py-2 border-2 border-blue-600 rounded-full hover:bg-blue-600 hover:text-white hover:transition-all hover:duration-300 dark:text-white ">
+                    Главная</RouterLink>
+                <RouterLink to="/about"
+                    class="text-lg font-medium m-1 px-2 py-2 border-2 border-blue-600 rounded-full hover:bg-blue-600 hover:text-white hover:transition-all hover:duration-300 dark:text-white">
+                     О себе</RouterLink>
+                <RouterLink to="/project"
+                    class="text-lg font-medium m-1 px-2 py-2 border-2 border-blue-600 rounded-full hover:bg-blue-600 hover:text-white hover:transition-all hover:duration-300 dark:text-white">
+                    Работы</RouterLink>
+            </li>
+        </ul>
+        <div>
+            <hr class="border-1 my-8 border-gray-400 sm:w-4/12 mx-auto">
+        </div>
+    </div>
+</template>
+<script setup>
+import router from '../router';
+
+const route = router.currentRoute.value.path;
+</script>
